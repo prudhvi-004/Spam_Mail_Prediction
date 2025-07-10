@@ -9,6 +9,7 @@ with open('spam_mail_model.sav', 'rb') as f:
 # ✅ Load trained vectorizer
 with open('vectorizer.pkl', 'rb') as f:
     feature_extraction = pickle.load(f)
+    
 
 def spam_mail_prediction(input_data):
     # ✅ Transform input using trained vectorizer
